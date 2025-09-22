@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDS Health Workforce Survey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .nav-link { font-weight: 500; }
+    .question { margin-bottom: 1rem; }
+    .section-title { margin-top: 2rem; font-size: 1.5rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MDS Survey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#about-core">About You (Core)</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#about-supp">About You (Supplemental)</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#training-core">Your Training (Core)</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#training-supp">Your Training (Supplemental)</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#work-core">Your Work (Core)</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#work-supp">Your Work (Supplemental)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="tab-content">
+      <!-- About You Core -->
+      <div class="tab-pane fade show active" id="about-core">
+        <h2 class="section-title">About You (Core)</h2>
+        <div class="question">What is your unique identification number?</div>
+        <div class="question">What is your full name?</div>
+        <div class="question">What is your date of birth?</div>
+        <div class="question">What is your gender identity?</div>
+        <div class="question">What languages do you speak?</div>
+        <div class="question">What is your race, national, or ethnic origin?</div>
+        <div class="question">Do you identify as Indigenous?</div>
+        <div class="question">What is your current citizenship status?</div>
+      </div>
+
+      <!-- About You Supplemental -->
+      <div class="tab-pane fade" id="about-supp">
+        <h2 class="section-title">About You (Supplemental)</h2>
+        <div class="question">Do you identify as a person with a disability?</div>
+        <div class="question">What is the postal code of your primary residence?</div>
+        <div class="question">Former name (if applicable)</div>
+        <div class="question">Initial year and month of registration</div>
+        <div class="question">Date of expiration of registration</div>
+      </div>
+
+      <!-- Training Core -->
+      <div class="tab-pane fade" id="training-core">
+        <h2 class="section-title">Your Training (Core)</h2>
+        <div class="question">What area(s) did you complete your entry-level training in?</div>
+        <div class="question">What required entry-level training did you complete?</div>
+        <div class="question">In which post-secondary institution(s) did you complete your training?</div>
+        <div class="question">When did you complete your entry-level training?</div>
+      </div>
+
+      <!-- Training Supplemental -->
+      <div class="tab-pane fade" id="training-supp">
+        <h2 class="section-title">Your Training (Supplemental)</h2>
+        <div class="question">What enhanced post-entry level skills training did you complete?</div>
+        <div class="question">What area(s) did you complete your post-entry level training in?</div>
+        <div class="question">In which post-secondary institution(s) did you complete post-entry training?</div>
+        <div class="question">When did you complete your post-entry level training?</div>
+        <div class="question">If foreign-educated, what was your pathway to working in Canada?</div>
+        <div class="question">Are you qualified to educate other health workers?</div>
+      </div>
+
+      <!-- Work Core -->
+      <div class="tab-pane fade" id="work-core">
+        <h2 class="section-title">Your Work (Core)</h2>
+        <div class="question">What is your employment status (in the last 12 months)?</div>
+        <div class="question">What is your health worker role (Statistics Canada NOC)?</div>
+        <div class="question">What is the name of your employer organization/practice?</div>
+        <div class="question">What is the postal code of your place of work?</div>
+        <div class="question">Which health care sector(s) apply to your work?</div>
+        <div class="question">What is your area of practice/specialty?</div>
+        <div class="question">How long have you worked in a paid position with your employer?</div>
+        <div class="question">How many weeks were you paid to work in the last 12 months?</div>
+        <div class="question">What was the average number of paid hours worked per week?</div>
+      </div>
+
+      <!-- Work Supplemental -->
+      <div class="tab-pane fade" id="work-supp">
+        <h2 class="section-title">Your Work (Supplemental)</h2>
+        <div class="question">What proportion of your working time was direct care?</div>
+        <div class="question">What proportion of your direct care was virtual?</div>
+        <div class="question">Have you had an absence from work in the last 12 months? (leave details)</div>
+        <div class="question">How many weeks were you off due to a leave of absence?</div>
+        <div class="question">Would you prefer to work more or fewer hours?</div>
+        <div class="question">How many hours of overtime did you typically work per week?</div>
+        <div class="question">Would you prefer to change your current employment if barriers were removed?</div>
+        <div class="question">What barriers limit your preferred employment?</div>
+        <div class="question">How would you rate your mental health?</div>
+        <div class="question">How would you rate your level of burnout in the last 12 months?</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
